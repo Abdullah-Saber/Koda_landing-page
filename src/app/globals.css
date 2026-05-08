@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  /* Luxurious Menswear Palette */
+  --color-brand-cream: #faf8f3;    /* Soft cream background */
+  --color-brand-sand: #f5f0e8;     /* Warm sand for subtle depth */
+  --color-brand-greige: #e8dfd0;    /* Muted greige for accents */
+  --color-brand-espresso: #1a1a1a;  /* Deep espresso for premium contrast */
+  --color-brand-charcoal: #2c2c2c;  /* Rich charcoal for text */
+  --color-brand-burgundy: #722f37;  /* Deep burgundy for luxury accents */
+  --color-brand-gold: #d4af37;      /* Gold for premium highlights */
+
+  --font-serif: var(--font-serif), serif;
+  --font-sans: var(--font-sans), sans-serif;
+
+  --animate-reveal: reveal 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+:root {
+  --background: #fbfbf7; /* brand-cream */
+  --foreground: #2d2d2d; /* brand-charcoal */
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 17px; /* Slightly larger base for clarity */
+  line-height: 1.6;
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/20 backdrop-blur-xl border border-white/30;
+  }
+  
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .premium-shadow {
+    box-shadow: 0 20px 50px rgba(0,0,0,0.05);
+  }
+}
