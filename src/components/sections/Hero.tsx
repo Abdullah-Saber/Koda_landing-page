@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
+import { imgSrc } from "@/lib/basePath";
 
 export default function Hero() {
   return (
@@ -16,7 +17,7 @@ export default function Hero() {
         className="absolute inset-0 z-0"
       >
         <Image
-          src="/hero.png"
+          src={imgSrc('/hero.png')}
           alt="Luxury Menswear Suit Collection"
           fill
           priority

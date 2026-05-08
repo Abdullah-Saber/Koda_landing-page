@@ -4,34 +4,35 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowRight, Plus } from "lucide-react";
+import { imgSrc } from "@/lib/basePath";
 
 const products = [
   {
     id: 1,
     name: "Sage Olive Performance Suit",
     price: "$2,450",
-    image: "/product-1.png",
+    image: imgSrc('/product-1.png'),
     category: "Signature",
   },
   {
     id: 2,
     name: "Architectural Grey Wool Suit",
     price: "$2,800",
-    image: "/product-2.png",
+    image: imgSrc('/product-2.png'),
     category: "Modern",
   },
   {
     id: 3,
     name: "Avant-Garde Charcoal Series",
     price: "$3,200",
-    image: "/hero.png", 
+    image: imgSrc('/hero.png'),
     category: "Editorial",
   },
   {
     id: 4,
     name: "Bespoke Navy Tailoring",
     price: "$2,650",
-    image: "/story.png",
+    image: imgSrc('/story.png'),
     category: "Classic",
   },
 ];

@@ -3,6 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { imgSrc } from "@/lib/basePath";
 
 export default function BrandStory() {
   return (
@@ -18,7 +19,7 @@ export default function BrandStory() {
           >
             <div className="relative aspect-square lg:aspect-[4/5] w-full max-w-lg mx-auto">
               <Image
-                src="/story.png"
+                src={imgSrc('/story.png')}
                 alt="Bespoke Niche Tailoring"
                 fill
                 className="object-cover"
